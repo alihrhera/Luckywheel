@@ -19,6 +19,8 @@ import java.util.List;
  * Created by mohamed on 22/04/17.
  */
 
+
+
 public class LuckyWheel extends FrameLayout implements View.OnTouchListener, OnRotationListener {
     private WheelView wheelView;
     private ImageView arrow;
