@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "WndoLuckywheel"
 include ':app'
 include ':app:luckywheel'
+include ':app:video_compress'

@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.window.wndo.lucky_wheel"
+        applicationId "com.wndo.lucky_wheel"
         minSdk 23
         targetSdk 32
         versionCode 1
@@ -33,6 +33,7 @@ android {
 
 dependencies {
     implementation project(':app:luckywheel')
+    implementation project(':app:video_compress')
     implementation 'androidx.core:core-ktx:1.7.10'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
