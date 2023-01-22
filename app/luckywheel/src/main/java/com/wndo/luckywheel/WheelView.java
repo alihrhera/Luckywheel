@@ -54,24 +54,22 @@ final class WheelView extends View {
 //        textPaint.setColor(Color.WHITE);
         textPaint.setAntiAlias(true);
         textPaint.setDither(true);
-        if (screenSize >= 320 && screenSize < 420) {
-            textPaint.setTextSize(18);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                textPaint.setLinearText(true);
-                textPaint.setLetterSpacing(.1f);
-            }
-        } else if (screenSize >= 420 && screenSize < 520) {
+        if (screenSize < 320 ) {
+            textPaint.setTextSize(16);
+            textPaint.setLinearText(true);
+            textPaint.setLetterSpacing(.08f);
+        } else if (screenSize < 420) {
+            textPaint.setTextSize(20);
+            textPaint.setLinearText(true);
+            textPaint.setLetterSpacing(.1f);
+        } else if (screenSize < 520) {
             textPaint.setTextSize(24);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                textPaint.setLinearText(true);
-                textPaint.setLetterSpacing(.25f);
-            }
-        } else if (screenSize >= 520) {
-            textPaint.setTextSize(26);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                textPaint.setLinearText(true);
-                textPaint.setLetterSpacing(.35f);
-            }
+            textPaint.setLinearText(true);
+            textPaint.setLetterSpacing(.25f);
+        } else {
+            textPaint.setTextSize(28);
+            textPaint.setLinearText(true);
+            textPaint.setLetterSpacing(.35f);
         }
         Typeface typeface = Typeface.create(Typeface.DEFAULT, Typeface.BOLD);
         textPaint.setTypeface(typeface);
